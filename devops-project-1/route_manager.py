@@ -1,9 +1,9 @@
 import subprocess
 
 
-ROUTE_TABLE_ID = "rtb-0123456789abcdef"
+ROUTE_TABLE_ID = "rtb-02d387dc62f227b9e"
 DESTINATION = "0.0.0.0/0"
-GATEWAY_ID = "igw-0123456789abcdef"
+GATEWAY_ID = "igw-0a0f8baa40ce36b56"
 
 
 def delete_route():
