@@ -2,7 +2,7 @@ import subprocess
 import json
 import sys
 
-ROUTE_TABLE_ID = "rtb-xxxxxxxxxxxxxxxxx"
+ROUTE_TABLE_ID = "rtb-02d387dc62f227b9e"
 BACKUP_FILE = "backup.json"
 
 
