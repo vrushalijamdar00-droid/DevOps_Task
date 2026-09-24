@@ -1,8 +1,8 @@
 import subprocess
 import json
 
-ROUTE_TABLE_ID = "rtb-0ad7b9c996c2e8465"
-DESTINATION = "10.20.0.0/16"
+ROUTE_TABLE_ID = "rtb-09ecaca15d6cd017c"
+DESTINATION = "0.0.0.0/0"
 
 
 def run_aws_command(command):
