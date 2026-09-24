@@ -1,9 +1,24 @@
 body {
     font-family: Arial, sans-serif;
+    background: #f4f4f4;
     text-align: center;
+}
+
+.container {
     margin-top: 100px;
+    background: white;
+    padding: 40px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 
 h1 {
-    font-size: 40px;
+    color: #333;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
 }
