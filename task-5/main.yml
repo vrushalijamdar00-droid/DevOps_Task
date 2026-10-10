@@ -1,0 +1,19 @@
+
+---
+- name: Install Java 21 without removing Java 8
+  hosts: backend
+  become: true
+
+  vars:
+    java_package: openjdk-21-jdk
+
+  tasks:
+    - name: Update apt package cache
+      ansible.builtin.apt:
+        update_cache: true
+        cache_valid_time: 3600
+
+    - name: Install Java 21
+      ansible.builtin.apt:
+        name: "{{ java_package }}"
+        state: present
