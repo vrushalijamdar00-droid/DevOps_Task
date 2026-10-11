@@ -1,0 +1,8 @@
+---
+- name: Configure Java and Docker on backend server
+  hosts: backend
+  become: true
+
+  roles:
+    - java
+    - docker

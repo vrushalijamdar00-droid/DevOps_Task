@@ -1,0 +1,16 @@
+---
+- name: Update apt package cache
+  ansible.builtin.apt:
+    update_cache: true
+    cache_valid_time: 3600
+
+- name: Install configured Docker package
+  ansible.builtin.apt:
+    name: "{{ docker_package }}"
+    state: present
+
+- name: Ensure Docker service is enabled and running
+  ansible.builtin.service:
+    name: "{{ docker_service }}"
+    enabled: true
+    state: started
